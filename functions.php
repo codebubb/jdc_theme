@@ -9,7 +9,7 @@ function register_styles(){
 
 
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 320, 240 );
+// set_post_thumbnail_size( 320, 240 );
 // add_image_size( 'featured-image', 320, 240);
 add_action( 'wp_enqueue_scripts', 'register_styles' );
 ?>
