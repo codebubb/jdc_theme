@@ -3,12 +3,14 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article class="single" id="post-<?php the_ID(); ?>" role="article">
+                <header style="background-image: url(<?php the_post_thumbnail_url('full'); ?>)" >
+                  <h1><?php the_title() ?></h1>
+                </header>
 
-                <?php the_post_thumbnail('full'); ?>
 
-                <h2 class="article-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-                <?php the_content('', true); ?>
-
+                <div class="post-content">
+                  <?php the_content(); ?>
+                </div>
 							</article>
 
 							<?php endwhile; ?>

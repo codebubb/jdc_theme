@@ -50,11 +50,10 @@
 
   <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-    <div class="container">
 
       <header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="container">
 
-        <div id="inner-header" class="wrap cf">
 
           <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
             <div id="logo" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri() . "/img/logo.png" ?>"/></a></div>
@@ -63,13 +62,12 @@
             <?php // bloginfo('description'); ?>
 
 
+
             <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
               <ul>
                 <li>Get Started</li>
                 <li>Resources</li>
               </ul>
             </nav>
-
           </div>
-
         </header>

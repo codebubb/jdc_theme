@@ -1,23 +1,14 @@
 <?php get_header() ?>
+<div class="content">
+<div class="container">
 <?php $image_side_left = true; ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <a href="<?php the_permalink() ?>">
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
-    <div class="col-left">
-      <?php if( $image_side_left){ ?>
+    <div class="featured-img">
       <?php the_post_thumbnail(); ?>
-      <?php } else{ ?>
-        <h2 class="article-title"><?php the_title(); ?></h2>
-        <?php the_excerpt(); ?>
-      <?php } ?>
-    </div><div class="col-right">
-      <?php if( !$image_side_left){ ?>
-      <?php the_post_thumbnail(); ?>
-      <?php } else{ ?>
-        <h2 class="article-title"><?php the_title(); ?></h2>
-        <?php the_excerpt(); ?>
-      <?php } ?>
     </div>
+    <h2 class="article-title"><?php the_title(); ?></h2>
   </article>
   </a>
   <?php $image_side_left = !$image_side_left; ?>
@@ -36,7 +27,8 @@
       <p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
     </footer>
   </article>
-
+</div>
+</div>
 <?php endif; ?>
 
 <?php get_footer(); ?>

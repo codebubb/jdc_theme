@@ -2,7 +2,7 @@
 /* Register styles */
 function register_styles(){
   wp_register_style('main', get_stylesheet_directory_uri() . '/css/main.css');
-  wp_register_style('main_font','https://fonts.googleapis.com/css?family=Roboto');
+  wp_register_style('main_font','https://fonts.googleapis.com/css?family=Montserrat:400,700');
   wp_enqueue_style('main');
   wp_enqueue_style('main_font');
 }

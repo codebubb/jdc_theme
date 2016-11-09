@@ -3,12 +3,13 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .container{
-  max-width: 960px;
-  margin: 0 auto;
+  width: 100%;
   padding: 25px;
 }
 
@@ -24,21 +25,39 @@ a:visited{
 #logo{
   width: 158px;
   height: 75px;
+  display: inline-block;
+  vertical-align: middle;
 }
 #logo img{
   width: 100%;
   height: 100%;
 }
 
+
 header{
-  margin: 8px 0px 36px 0px;
+  padding-top: 8px;
+  background-color: rgb(37,37,35);
+
+}
+
+header .container{
+  padding: 10px 25px;
+}
+
+nav{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 nav ul{
   text-align: right;
   list-style-type: none;
   padding: 0;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 nav ul li{
@@ -46,33 +65,86 @@ nav ul li{
   width: 150px;
 }
 
+nav ul li:hover{
+  text-shadow: 0px 0px 16px rgba(255,255,255,0.56);
+}
+
+.content{
+  background-color: rgb(40,40,38);
+}
+
+
 /* Articles on home page */
 article{
   margin-bottom: 15px;
-  box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.15);
+  /*box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.15);*/
   transition: all 200ms ease-out;
+  width: 21.6%;
+  margin: 1.7%;
+  display: inline-block;
+  vertical-align: top;
 }
 article.list:hover{
-  box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.25);
+  /*box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.25);*/
 }
-article .col-right, article .col-left{
-  width: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 25px;
-}
-
-article.single{
-  box-shadow: none;
-}
-
-.wp-post-image{
+.featured-img{
   width: 100%;
   height: auto;
+  margin-bottom: 1.5em;
+  overflow: hidden;
 }
 
+.featured-img:hover img{
+  transition: all 200ms ease-out;
+  transform: scale(1.01);
+}
+
+
 article .article-title{
-  font-size: 24px;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  color: white;
+}
+
+article .article-title:hover{
+  text-shadow: 0px 0px 16px rgba(255,255,255,0.56);
+}
+
+/* Single page articles */
+article.single{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+article.single header{
+  padding-top: 18em;
+  padding-left: 6%;
+  padding-bottom: 5em;
+  padding-right: 32%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+article.single header h1{
+font-size: 3.5em;
+color: white;
+}
+article.single .post-content{
+
+  margin: 100px auto 25px;
+  width: 860px;
+  font-size: 1.2em;
+  color: rgb(126,126,126);
+  line-height: 2em;
+}
+
+/* Footer */
+footer{
+  background-color: rgb(40,40,38);
+  color: white;
+  margin: 0;
+  padding: 25px;
 }
 
 @media only screen and (max-width: 480px){
