@@ -3,14 +3,15 @@
 <div class="container">
 <?php $image_side_left = true; ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <a href="<?php the_permalink() ?>">
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
+  <a href="<?php the_permalink() ?>">
     <div class="featured-img">
-      <?php the_post_thumbnail(); ?>
+      <?php the_post_thumbnail('full'); ?>
     </div>
-    <h2 class="article-title"><?php the_title(); ?></h2>
+    <h2 class="article-title"><?php the_title(); ?></h2>  </a>
+    <p class="post-details"><?php echo get_the_date(); ?></p>
   </article>
-  </a>
+
   <?php $image_side_left = !$image_side_left; ?>
 <?php endwhile; ?>
 
