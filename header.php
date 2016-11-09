@@ -64,8 +64,17 @@
 
 
             <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <input type="checkbox" id="hamburger-btn">
+              <label class="icon" for="hamburger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              </label>
               <ul>
                 <li>Get Started</li>
+                <li>Resources</li>
+                <li>Resources</li>
+                <li>Resources</li>
                 <li>Resources</li>
               </ul>
             </nav>

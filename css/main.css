@@ -50,25 +50,51 @@ nav{
   letter-spacing: 1px;
   font-size: 1em;
   color: white;
+  height: 100%;
   display: inline-block;
   vertical-align: middle;
+  float: right;
+  text-align: right;
 }
 
 nav ul{
-  text-align: right;
   list-style-type: none;
+  overflow: hidden;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 25px;
+  transition: max-height .2s ease-out;
 }
 
 nav ul li{
   display: inline-block;
-  width: 150px;
+  margin: 0 10px;
 }
 
 nav ul li:hover{
   text-shadow: 0px 0px 16px rgba(255,255,255,0.56);
 }
+
+#hamburger-btn, #hamburger-btn + label{
+  display: none;
+}
+
+#hamburger-btn:checked ~ .menu{
+  max-height: 500px;
+}
+
+#hamburger-btn:checked ~ ul {
+  max-height: 999px;
+}
+
+.icon span{
+  border-bottom: 4px solid white;
+  width: 40px;
+  height: 10px;
+  display: block;
+}
+
+
+
 
 .content{
   background-color: rgb(40,40,38);
@@ -170,9 +196,28 @@ footer{
   article.list{
   width: 46%;
   }
+  #hamburger-btn + label{
+   display: block;
+   margin-top: 15px;
+ }
+  nav ul{
+    position: absolute;
+    right: 0;
+    max-height: 0px;
+    background-color: rgb(37,37,35);
+    text-align: right;
+    z-index: 99;
+
+  }
+  nav ul li{
+    padding: 0 20px 20px 20px;
+    display: block;
+    margin: 10px 0;
+  }
 }
 @media only screen and (max-width: 650px){
   article.list{
-  width: 96%;
-}
+    width: 96%;
+  }
+
 }
