@@ -22,6 +22,12 @@ a:visited{
   color: rgb(36, 36, 36);
 }
 
+/* Color classes */
+.black{
+  color: black;
+}
+
+
 /* Header */
 #logo{
   width: 158px;
@@ -38,7 +44,6 @@ a:visited{
 header{
   padding-top: 8px;
   background-color: rgb(37,37,35);
-
 }
 
 header .container{
@@ -70,7 +75,11 @@ nav ul li{
   margin: 0 10px;
 }
 
-nav ul li:hover{
+nav ul li a{
+  color: white;
+}
+
+nav ul li a:hover{
   text-shadow: 0px 0px 16px rgba(255,255,255,0.56);
 }
 
@@ -170,7 +179,6 @@ font-size: 3.5em;
 color: white;
 }
 article.single .post-content{
-
   margin: 100px auto 25px;
   max-width: 860px;
   padding: 10px;
@@ -178,6 +186,14 @@ article.single .post-content{
   color: rgb(126,126,126);
   line-height: 2em;
 }
+
+article.single #disqus_thread{
+  margin: 100px auto 25px;
+  max-width: 860px;
+  padding: 10px;
+}
+
+
 
 /* Footer */
 footer{

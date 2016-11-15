@@ -71,11 +71,8 @@
               <span></span>
               </label>
               <ul>
-                <li>Get Started</li>
-                <li>Resources</li>
-                <li>Resources</li>
-                <li>Resources</li>
-                <li>Resources</li>
+                <li><a href="/get-started">Get Started</a></li>
+                <li><a href="/resources">Resources</a></li>
               </ul>
             </nav>
           </div>
