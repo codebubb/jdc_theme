@@ -9,6 +9,7 @@
 
 
                 <div class="post-content">
+									<p><em>Last updated on <?php the_modified_date(); ?></em></p>
                   <?php the_content(); ?>
                 </div>
 							<?php	if ( comments_open() || get_comments_number() ) {
