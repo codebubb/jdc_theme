@@ -16,10 +16,17 @@ body{
 
 a{
   text-decoration: none;
-  color: rgb(36, 36, 36);
+  color: rgb(81, 54, 200);
 }
 a:visited{
   color: rgb(36, 36, 36);
+}
+
+ol.link-menu{
+  color: rgb(81, 54, 200);
+}
+ol.link-menu > ul{
+  list-style-type: none;
 }
 
 /* Color classes */
