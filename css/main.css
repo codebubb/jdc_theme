@@ -1,4 +1,4 @@
-* {
+  * {
   box-sizing: border-box;
 }
 
@@ -213,7 +213,7 @@ article.single .post-content{
   max-width: 860px;
   padding: 10px;
   font-size: 1.2em;
-  color: rgb(126,126,126);
+  color: rgb(71, 71, 71);
   line-height: 2em;
 }
 
