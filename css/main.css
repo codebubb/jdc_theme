@@ -217,8 +217,12 @@ article.single .post-content{
   line-height: 2em;
 }
 
+article.single .post-content p{
+  margin-bottom: 25px;
+}
+
 article.single #disqus_thread{
-  margin: 100px auto 25px;
+  margin: 20px auto 25px;
   max-width: 860px;
   padding: 10px;
 }
@@ -268,6 +272,10 @@ footer{
 @media only screen and (max-width: 650px){
   article.list{
     width: 96%;
+  }
+  article.single header h1{
+  font-size: 3em;
+  color: white;
   }
 
 }
