@@ -6,13 +6,11 @@
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
   <a href="<?php the_permalink() ?>">
     <div class="featured-img">
-      <?php the_post_thumbnail('full'); ?>
+      <?php the_post_thumbnail(); ?>
     </div>
     <h2 class="article-title"><?php the_title(); ?></h2>  </a>
-    <p class="post-details"><?php echo get_the_date(); ?></p>
+    <p class="post-details"><?php echo the_modified_date(); ?></p>
   </article>
-
-  <?php $image_side_left = !$image_side_left; ?>
 <?php endwhile; ?>
 
 <?php else : ?>
