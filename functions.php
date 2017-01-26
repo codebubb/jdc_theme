@@ -1,6 +1,22 @@
 <?php
 
 
+/* Async function */
+function add_async_attribute($tag, $handle) {
+   // add script handles to the array below
+   $scripts_to_async = array('prismjs');
+
+   foreach($scripts_to_async as $async_script) {
+      if ($async_script === $handle) {
+         return str_replace(' src', ' async src', $tag);
+      }
+   }
+   return $tag;
+}
+
+add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+
 /* Register styles */
 function register_styles(){
   wp_register_style('core', get_stylesheet_directory_uri() . '/style.css');
@@ -16,21 +32,6 @@ function register_styles(){
 
   wp_enqueue_script('prismjs');
 }
-
-/* Async function */
-function add_async_attribute($tag, $handle) {
-   // add script handles to the array below
-   $scripts_to_async = array('prismjs');
-
-   foreach($scripts_to_async as $async_script) {
-      if ($async_script === $handle) {
-         return str_replace(' src', ' async src', $tag);
-      }
-   }
-   return $tag;
-}
-
-add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
 
 
 add_theme_support( 'post-thumbnails' );
