@@ -24,7 +24,7 @@ function add_async_attribute($tag, $handle) {
 
    foreach($scripts_to_async as $async_script) {
       if ($async_script === $handle) {
-         return str_replace(' src', ' async="async" src', $tag);
+         return str_replace(' src', ' async src', $tag);
       }
    }
    return $tag;
