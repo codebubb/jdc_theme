@@ -29,7 +29,6 @@
     <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
     <meta name="theme-color" content="#121212">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <script src="//load.sumome.com/" data-sumo-site-id="2610de23d5b80ca43b80404417bbc71fc7c3882c5a0e822bd552d83f26e7072a" async="async"></script>
     <?php // wordpress head functions ?>
     <?php wp_head(); ?>
     <?php // end of wordpress head ?>

@@ -1,4 +1,13 @@
 <?php
+/* Async function */
+function add_async_attribute($tag, $handle) {
+    if ( 'my-js-handle' !== $handle )
+        return $tag;
+    return str_replace( ' src', ' async="async" src', $tag );
+}
+add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+
 /* Register styles */
 function register_styles(){
   wp_register_style('core', get_stylesheet_directory_uri() . '/style.css');
