@@ -9,7 +9,7 @@
 
 
                 <div class="post-content">
-									<p><em>Last updated on <?php the_modified_date(); ?></em></p>
+									<p><em>Last updated on <time datetime="<?php the_modified_date(c);?>"><?php the_modified_date();?></time> </em></p>
                   <?php the_content(); ?>
                 </div>
 							<?php	if ( comments_open() || get_comments_number() ) {

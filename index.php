@@ -2,14 +2,8 @@
 <div class="content">
 <div class="container">
 <?php
-$the_query = new WP_Query( array(
-     'post_type'   => 'post',
-     'numberposts' => '16',
-     'orderby'     => 'modified',
-     'order'       => 'DESC',
- ));
- ?>
-<?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : the_post(); ?>
+
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
   <a href="<?php the_permalink() ?>">
     <div class="featured-img">
