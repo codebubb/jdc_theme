@@ -33,7 +33,7 @@ function register_styles(){
   wp_enqueue_script('prismjs');
 }
 
-
+add_image_size( 'home-page-thumb', 600, 300 );
 add_theme_support( 'post-thumbnails' );
 // set_post_thumbnail_size( 320, 240 );
 // add_image_size( 'featured-image', 320, 240);

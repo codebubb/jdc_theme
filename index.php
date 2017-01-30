@@ -6,7 +6,7 @@
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
   <a href="<?php the_permalink() ?>">
     <div class="featured-img">
-      <?php the_post_thumbnail(); ?>
+      <?php the_post_thumbnail('home-page-thumb'); ?>
     </div>
     <h2 class="article-title"><?php the_title(); ?></h2>  </a>
     <p class="post-details"><?php echo the_modified_date(); ?></p>
