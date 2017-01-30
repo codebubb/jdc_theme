@@ -1,7 +1,14 @@
 <?php get_header() ?>
 <div class="content">
 <div class="container">
-<?php $image_side_left = true; ?>
+<?php
+$the_query = new WP_Query( array(
+     'post_type'   => $post_type,
+     'numberposts' => '16',
+     'orderby'     => 'modified',
+     'order'       => 'DESC',
+ ));
+ ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
   <a href="<?php the_permalink() ?>">
