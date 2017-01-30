@@ -9,7 +9,7 @@ $the_query = new WP_Query( array(
      'order'       => 'DESC',
  ));
  ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php if ($the_query->have_posts()) : while (have_posts()) : the_post(); ?>
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
   <a href="<?php the_permalink() ?>">
     <div class="featured-img">
