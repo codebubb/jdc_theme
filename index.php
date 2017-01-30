@@ -3,7 +3,7 @@
 <div class="container">
 <?php
 $the_query = new WP_Query( array(
-     'post_type'   => $post_type,
+     'post_type'   => 'post',
      'numberposts' => '16',
      'orderby'     => 'modified',
      'order'       => 'DESC',
