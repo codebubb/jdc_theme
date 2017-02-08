@@ -1,8 +1,10 @@
 <?php get_header() ?>
 <div class="content">
 <div class="container">
+<?php $args = array('category_name' => 'Articles');
+$query = new WP_Query($args);
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
   <article class="list" id="post-<?php the_ID(); ?>" role="article">
   <a href="<?php the_permalink() ?>">
     <div class="featured-img">

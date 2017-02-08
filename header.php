@@ -59,8 +59,6 @@
             <?php // if you'd like to use the site description you can un-comment it below ?>
             <?php // bloginfo('description'); ?>
 
-
-
             <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
               <input type="checkbox" id="hamburger-btn">
               <label class="icon" for="hamburger-btn">
@@ -68,10 +66,7 @@
               <span></span>
               <span></span>
               </label>
-              <ul>
-                <li><a href="/get-started">Get Started</a></li>
-                <li><a href="/resources">Resources</a></li>
-              </ul>
+              <?php wp_page_menu(); ?>
             </nav>
           </div>
         </header>
