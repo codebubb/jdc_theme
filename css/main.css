@@ -225,7 +225,23 @@ article.single #disqus_thread{
   padding: 10px;
 }
 
+/* Categories */
+article.category{
+  margin-bottom: 15px;
+  transition: all 200ms ease-out;
+  width: 21%;
+  margin: 1.7%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
 
+article.category h2{
+  left: 5%;
+  top: 20%;
+  position: absolute;
+  color: white;
+}
 
 /* Footer */
 footer{
