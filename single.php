@@ -33,5 +33,9 @@
 									</article>
 
 							<?php endif; ?>
-
+							<script>
+							jQuery(function() {
+							  jQuery.scrollDepth();
+							});
+							</script>
               <?php get_footer(); ?>

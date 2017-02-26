@@ -23,6 +23,9 @@ function register_styles(){
   wp_register_style('main', get_stylesheet_directory_uri() . '/css/main.css');
   wp_register_style('prismcss', get_stylesheet_directory_uri() . '/css/prism.css');
   wp_register_style('main_font','https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+  wp_register_script('jquery', 'https://code.jquery.com/jquery-1.12.4.min.js');
+  wp_register_script('scrolldepth', get_stylesheet_directory_uri() . '/js/jquery.scrolldepth.min.js');
   wp_register_script('prismjs', get_stylesheet_directory_uri() . '/js/prism.js');
 
   wp_enqueue_style('core');
@@ -30,6 +33,8 @@ function register_styles(){
   wp_enqueue_style('prismcss');
   wp_enqueue_style('main_font');
 
+  wp_enqueue_script('jquery');
+  wp_enqueue_script('scrolldepth');
   wp_enqueue_script('prismjs');
 }
 
