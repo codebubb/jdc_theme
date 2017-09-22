@@ -3,7 +3,7 @@
 }
 
 body{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 0;
   margin: 0;
   color: white;
@@ -190,6 +190,7 @@ article .post-details{
 article.single{
   display: block;
   width: 100%;
+  background-color: #f1f1f1;
   margin: 0;
 }
 
@@ -209,14 +210,23 @@ color: white;
 article.single .post-content{
   margin: 50px auto 25px;
   max-width: 860px;
-  padding: 10px;
+  padding: 25px 50px;
   font-size: 1.2em;
-  color: rgb(71, 71, 71);
+  background-color: #fff;
+  color: rgb(46, 46, 46);
   line-height: 2em;
 }
 
 article.single .post-content p{
   margin-bottom: 25px;
+}
+
+article.single .post-content img{
+  max-width: 100%;
+}
+
+article.single h2{
+  margin: 50px 0;
 }
 
 article.single #disqus_thread{
