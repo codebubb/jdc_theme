@@ -19,11 +19,11 @@
 									<p><em>Last updated on <time datetime="<?php the_modified_date(c);?>"><?php the_modified_date();?></time> </em></p>
                   <?php the_content(); ?>
                 </div>
+								<div class="fb-page" data-href="https://www.facebook.com/juniordevelopercentral/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/juniordevelopercentral/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/juniordevelopercentral/">Junior Developer Central with James Bubb</a></blockquote></div>
 							<?php	if ( comments_open() || get_comments_number() ) {
 									comments_template();
 								} ?>
 							</article>
-							<div class="fb-page" data-href="https://www.facebook.com/juniordevelopercentral/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/juniordevelopercentral/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/juniordevelopercentral/">Junior Developer Central with James Bubb</a></blockquote></div>
 							<?php endwhile; ?>
 
 							<?php else : ?>
